@@ -13,13 +13,13 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoescriturarapida.PerdistesController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoescriturarapida.PerdistesController">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0">
          <children>
             <ImageView fitHeight="456.0" fitWidth="656.0" layoutX="-0.8" pickOnBounds="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@../../../../../../../../Downloads/GameOver.png" />
+                  <Image url="@GameOver.png" />
                </image>
             </ImageView>
             <Label fx:id="gameOverLabel" layoutX="184.0" layoutY="185.0" text="GAME OVER" textAlignment="CENTER">
