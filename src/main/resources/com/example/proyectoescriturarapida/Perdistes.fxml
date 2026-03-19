@@ -1,71 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoescriturarapida.PerdistesController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="775.0" styleClass="-fx-background-color: rgba(0, 0, 0, 0.7); -fx-background-radius: 20; -fx-border-color: #ff0000; -fx-border-width: 2; -fx-padding: 20; -fx-alignment: CENTER; -fx-spacing: 15;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoescriturarapida.controller.PerdistesController">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="776.0">
          <children>
-            <ImageView fitHeight="456.0" fitWidth="656.0" layoutX="-0.8" pickOnBounds="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="582.0" fitWidth="776.0" layoutX="-0.8" pickOnBounds="true" AnchorPane.bottomAnchor="-72.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-55.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@GameOver.png" />
+                  <Image url="@images/perdistes.jpeg" />
                </image>
             </ImageView>
-            <Label fx:id="gameOverLabel" layoutX="184.0" layoutY="185.0" text="GAME OVER" textAlignment="CENTER">
-               <font>
-                  <Font name="Impact" size="64.0" />
-               </font>
-               <effect>
-                  <Glow level="0.9" />
-               </effect>
-               <textFill>
-                  <LinearGradient endY="0.9356060633153627" startX="0.0037878788443225803" startY="0.16287883122762045">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.6365853658536584">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Label>
-            <Button fx:id="btnReintentar" layoutX="251.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleRestart" text="REINTENTAR" textAlignment="CENTER">
+            <Button fx:id="btnReintentar" layoutX="292.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleRestart" prefHeight="19.0" prefWidth="190.0" styleClass="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-family: &quot;Arial Black&quot;; -fx-font-size: 20px; -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, red, 15, 0.5, 0, 0);" text="REINTENTAR" textAlignment="CENTER" textFill="RED">
                <font>
                   <Font name="Impact" size="25.0" />
                </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <AnchorPane layoutX="248.0" layoutY="147.0" prefHeight="200.0" prefWidth="300.0">
+               <styleClass>
+                  <String fx:value="-fx-background-color: rgba(20, 0, 0, 0.8); -fx-background-radius: 20; -fx-border-color: #ff3333; -fx-border-width: 3; -fx-effect: dropshadow(three-pass-box, rgba(255,0,0,0.4), 10, 0, 0, 0);" />
+                  <String fx:value="0" />
+                  <String fx:value="0" />
+                  <String fx:value="0.7); -fx-background-radius: 15; -fx-border-color: #ff0000; -fx-border-width: 2;" />
+               </styleClass>
+            </AnchorPane>
+            <Label fx:id="lblNiveles" layoutX="11.0" layoutY="59.0" prefHeight="35.0" prefWidth="580.0" styleClass="-fx-effect: dropshadow(gaussian, yellow, 15, 0.5, 0, 0);">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
                <textFill>
-                  <LinearGradient endY="1.0" startX="0.02651514970895008" startY="0.9166666558294585">
+                  <RadialGradient centerX="0.5" centerY="0.6477272655024673" radius="0.5">
                      <stops>
                         <Stop>
                            <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="0.6365853658536584">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
+                              <Color red="1.0" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
@@ -74,9 +56,30 @@
                            </color>
                         </Stop>
                      </stops>
-                  </LinearGradient>
+                  </RadialGradient>
                </textFill>
-            </Button>
+            </Label>
+            <Label fx:id="lblPuntos" layoutX="10.0" layoutY="123.0" prefHeight="48.0" prefWidth="639.0" styleClass="-fx-effect: dropshadow(gaussian, yellow, 15, 0.5, 0, 0);">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.6818181827212825" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
          </children>
       </AnchorPane>
    </children>

@@ -6,4 +6,10 @@ module com.example.proyectoescriturarapida {
 
     opens com.example.proyectoescriturarapida to javafx.fxml;
     exports com.example.proyectoescriturarapida;
+    exports com.example.proyectoescriturarapida.controller;
+    opens com.example.proyectoescriturarapida.controller to javafx.fxml;
+    exports com.example.proyectoescriturarapida.model;
+    opens com.example.proyectoescriturarapida.model to javafx.fxml;
+    exports com.example.proyectoescriturarapida.view;
+    opens com.example.proyectoescriturarapida.view to javafx.fxml;
 }
